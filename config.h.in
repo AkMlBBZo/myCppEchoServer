@@ -1,0 +1,4 @@
+#pragma once
+
+#define MAIN_LOG_FILE "@MAIN_LOG_FILE@"
+#define CLIENT_MANAGER_LOG_FILE "@CLIENT_MANAGER_LOG_FILE@"
