@@ -56,7 +56,8 @@ void ClientManager::start(int port) {
         return;
     }
 
-    running = true;
+    running          = true;
+    connectionThread = std::thread(&ClientManager::handleNewConnections, this);
     fileLogger.log("Server started on port " + std::to_string(port), LogLevel::INFO);
 }
 
