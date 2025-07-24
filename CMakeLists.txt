@@ -20,6 +20,9 @@ set(LOGS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/logs")
 set(MAIN_LOG_FILE "${LOGS_DIR}/logs.txt")
 set(CLIENT_MANAGER_LOG_FILE "${LOGS_DIR}/ClientManagerLogs.txt")
 
+# created :
+# # 'logs/ClientManagerLogs.txt'
+# # 'logs/logs.txt'
 file(MAKE_DIRECTORY "${LOGS_DIR}")
 file(APPEND "${MAIN_LOG_FILE}" "")
 file(APPEND "${CLIENT_MANAGER_LOG_FILE}" "")
